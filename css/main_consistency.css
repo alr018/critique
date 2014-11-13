@@ -3,17 +3,28 @@
 }
 
 .image_consistency_button {
-    height:50px;
+    height:80px;
+}
+.image_consistency_button_container {
+    padding: 2px;
 }
 
 .image_consistency_contact_bar {
-    height:40px;
+    height:60px;
 }
 
 #image_consistency_contact_bar_home {
-    height:58px;
+    height:78px;
+}
+
+.image_consistency_contact_bar_container {
+    padding: 1px;
 }
 
 .image_consistency_brand {
     height:220px;
+}
+
+.image_consistency_brand_container {
+    padding: 5px;
 }

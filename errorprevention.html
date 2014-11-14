@@ -20,6 +20,9 @@
     });
     </script>
 
+    <!-- CSS for consistency --> 
+    <link href="./css/main_aesthetics.css" rel="stylesheet">
+
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/support.css" rel="stylesheet">
@@ -55,42 +58,54 @@
 
     <div class="header">
         <h1 class="htitle">Error Prevention</h1>
-        <p class="hdescription"> Usuability Evaluation of the University of Leicester website through Neilsen's 10 Heuristics</p>
+        <p class="hdescription"> Using form validation and displaying mandatory fields can help prevent errors from happening.</p>
       </div>
 
         <div class="col-sm-8 blog-main">
 
           <div class="blog-post">
-            <h2 class="blog-post-title">Sample blog post</h2>
-            <p class="blog-post-meta">January 1, 2014 by <a href="#">Mark</a></p>
-
-            <p>This blog post shows a few different types of content that's supported and styled with Bootstrap. Basic typography, images, and code are all supported.</p>
-            <hr>
-            <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
-            <blockquote>
-              <p>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-            </blockquote>
-            <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
-            <h2>Heading</h2>
-            <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-            <h3>Sub-heading</h3>
-            <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-            <pre><code>Example code block</code></pre>
-            <p>Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
-            <h3>Sub-heading</h3>
-            <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-            <ul>
-              <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
-              <li>Donec id elit non mi porta gravida at eget metus.</li>
-              <li>Nulla vitae elit libero, a pharetra augue.</li>
-            </ul>
-            <p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</p>
-            <ol>
-              <li>Vestibulum id ligula porta felis euismod semper.</li>
-              <li>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</li>
-              <li>Maecenas sed diam eget risus varius blandit sit amet non magna.</li>
-            </ol>
-            <p>Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.</p>
+            <div class="row">
+                      <div class="col-sm-6">
+                          <p>From the homepage there were two very clear search fields for the user. The first was a prominent “Find your course” search box. After submitting the user was redirected to a page that would either display the search results or indicate that no matches were found. This search field meets the basic requirements for most search fields on the web. 
+                          </p>
+                      </div>
+                      <a href="./screenshots/errorprevention_coursesearch.png" rel="shadowbox" class="image_consistency_nav_container">
+                          <div class="col-sm-6"><img src="./screenshots/errorprevention_coursesearch.png" class="image_consistency"/></div>
+                      </a>
+                  </div>
+                  <hr>
+                  <div class="row">
+                      <div class="col-sm-6">
+                          <p>However, the second search field on the homepage, which was unlabeled, did not. Based on placement it can be assumed that the search bar was to do a full site search, but a small hint field in the textbox would have been appreciated. Furthermore, once the user presses submit on the field, they are redirected to a “Google Powered” search page. This did not flow well with the rest of the site. More importantly, this page left the search results completely blank if no results were found. Without an indication of why the page was blank, this can be ambiguous to the user.
+                          </p>
+                      </div>
+                      <a href="./screenshots/errorprevention_sitesearch.png" rel="shadowbox" class="image_consistency_nav_container">
+                          <div class="col-sm-6"><img src="./screenshots/errorprevention_sitesearch.png" class="image_consistency"/></div>
+                      </a>
+                  </div>
+                  <hr>
+                  <div class="row">
+                      <div class="col-sm-6">
+                          <p>In addition to search forms, there were also a few submission forms, such as the “Request a Prospectus” form. This form clearly indicated the mandatory fields and performed validation after pressing submit which indicated which fields were at fault. However, it had an interesting issue where it would only display the email field as having an error until the email was entered correctly. After which, all the other fields would be validated in parallel.
+                          </p>
+                      </div>
+                      <a href="./screenshots/errorprevention_prospectus.png" rel="shadowbox" class="image_consistency_nav_container">
+                          <div class="col-sm-6"><img src="./screenshots/errorprevention_prospectus.png" class="image_consistency"/></div>
+                      </a>
+                  </div>
+                  <hr>
+                  <div class="row">
+                      <div class="col-sm-6">
+                          <p>Throughout the website there were standard login pages that required a username and password. These pages performed typical validation after the user pressed submit. They often had helpful text that reminded the user which login they should use. As an example, on the IT login page it specified that the user should enter his IT credentials to login. On the “MyStudentLogin” page it reminded the user that they may need to create an account if it is their first time logging in and had a clear link for registration. This text may help user from struggling to determine why they are unable to login.
+                          </p>
+                      </div>
+                      <a href="./screenshots/errorprevention_loginformerrors.png" rel="shadowbox" class="image_consistency_nav_container">
+                          <div class="col-sm-6"><img src="./screenshots/errorprevention_loginformerrors.png" class="image_consistency"/></div>
+                      </a>
+                      <a href="./screenshots/errorprevention_loginstudentserror.png" rel="shadowbox" class="image_consistency_nav_container">
+                          <div class="col-sm-6"><img src="./screenshots/errorprevention_loginstudentserror.png" class="image_consistency"/></div>
+                      </a>
+                  </div>
           </div><!-- /.blog-post -->
 
 
